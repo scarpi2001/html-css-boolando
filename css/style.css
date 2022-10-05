@@ -13,8 +13,11 @@ body {
 /* INTESTAZIONE */
 header {
     background-color: rgb(255, 115, 0);
-    min-height: 70px;
-    /* position: fixed; */
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 /* nav intestazione */
@@ -22,7 +25,7 @@ header {
         display: flex;
         width: 60%;
         margin: 0 auto;
-        min-height: 70px;
+        height: 100%;
     }
         /* links */
         .aside {
@@ -59,3 +62,39 @@ header {
                 color: #fff;
                 margin-left: 10px;
             }   
+
+/* CORPO PAGINA */
+main {
+    margin-top: 70px;
+    padding: 5% 0;
+}
+
+    /* container */
+    .container {
+        width: 60%;
+        margin: 0 auto;
+    }
+        /* riga */
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+            .row > div {
+                width: 32%;
+            }
+
+                .shop-img {
+                    max-width: 100%;
+                }
+
+                .uno {
+                    z-index: 1;
+                }
+
+                .due {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 0;
+                }
