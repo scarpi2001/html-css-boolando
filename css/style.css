@@ -1,4 +1,4 @@
-/* generali */
+/* GENERALI */
 * {
     margin: 0;
     padding: 0;
@@ -9,3 +9,53 @@ body {
     font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;;
     font-size: 16px;
 }
+
+/* INTESTAZIONE */
+header {
+    background-color: rgb(255, 115, 0);
+    min-height: 70px;
+    /* position: fixed; */
+}
+
+/* nav intestazione */
+    nav {
+        display: flex;
+        width: 60%;
+        margin: 0 auto;
+        min-height: 70px;
+    }
+        /* links */
+        .aside {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 25%;
+        }
+
+            .link {
+                color: #fff;
+                text-decoration: none;
+                margin-right: 10px;
+            }
+
+        /* logo */
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+        }
+
+            .logo img {
+                width: 20%;
+            }
+        
+        /* icone intestazione */
+        .right {
+            justify-content: flex-end;
+        }
+
+            .icon {
+                color: #fff;
+                margin-left: 10px;
+            }   
