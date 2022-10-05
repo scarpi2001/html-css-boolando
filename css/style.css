@@ -18,6 +18,8 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 50;
+    color: #fff;
 }
 
 /* nav intestazione */
@@ -30,7 +32,6 @@ header {
         /* links */
         .aside {
             display: flex;
-            justify-content: flex-start;
             align-items: center;
             width: 25%;
         }
@@ -59,14 +60,13 @@ header {
         }
 
             .icon {
-                color: #fff;
                 margin-left: 10px;
             }   
 
 /* CORPO PAGINA */
 main {
     margin-top: 70px;
-    padding: 5% 0;
+    padding: 3% 0;
 }
 
     /* container */
@@ -78,6 +78,7 @@ main {
         .row {
             display: flex;
             justify-content: space-between;
+            margin-bottom: 5%;
         }
 
             .row > div {
@@ -108,7 +109,7 @@ main {
                 .label-container {
                     position: absolute;
                     left: 0;
-                    bottom: 10%;
+                    bottom: 15%;
                     z-index: 3;
                 }
                     .label {
@@ -133,3 +134,42 @@ main {
                     padding: 20px;
                     z-index: 3;
                 }
+
+                /* testo */
+                .text {
+                    margin-top: 5px;
+                }
+
+                    .text div {
+                        color: gray;
+                    }
+
+                    .prezzo-rosso {
+                        color: red;
+                    }
+
+                    .prezzo-barrato {
+                        text-decoration: line-through;
+                    }
+/* FOOTER */
+footer {
+    background-color: rgb(26, 24, 24);
+    padding: 20px 0;
+    color: #fff;
+}
+    /* nav footer */
+    footer nav {
+        justify-content: space-between;
+    }
+
+        .aside-bottom {
+            flex-direction: column;
+        }
+
+        .right {
+            display: flex;
+        }
+
+            nav h3, h4 {
+                margin-bottom: 10px;
+            }
